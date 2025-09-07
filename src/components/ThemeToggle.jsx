@@ -1,7 +1,5 @@
 const ThemeToggle = () => {
-  const handleToggle = () => {
-    document.documentElement.classList.toggle("dark"); // adds/removes dark mode
-  };
+  const handleToggle = () => {};
 
   return (
     <button

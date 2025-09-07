@@ -8,7 +8,6 @@ const Sidebar = ({ open, close }) => {
     navigate("/signin");
   };
 
-
   return (
     <>
       {open && <div onClick={close} className="fixed inset-0 z-20"></div>}
@@ -46,14 +45,14 @@ const Sidebar = ({ open, close }) => {
           </NavLink>
 
           <button
-        onClick={handleLogout}
-        className="py-3 text-lg text-left hover:text-red-500"
-      >
-        Logout
-      </button>
+            onClick={handleLogout}
+            className="py-3 text-lg text-left hover:text-red-500"
+          >
+            Logout
+          </button>
         </nav>
 
-        <div className="flex flex-col justify-start items-start mt-52 md:mt-[800px] lg:">
+        <div className="flex flex-col justify-start items-start mt-52 md:mt-60 lg:mt-0">
           <p className="bg-red-500 border border-[#010101] rounded-full w-14 h-14 flex justify-center items-center shadow-2xl mb-1">
             <p className="text-center font-serif text-4xl text-[#FAFAFA] font-extrabold">
               A
@@ -108,12 +107,15 @@ const Sidebar = ({ open, close }) => {
             Settings
           </NavLink>
 
-          <button onClick={handleLogout} className="py-3 text-lg text-left hover:text-red-500">
+          <button
+            onClick={handleLogout}
+            className="py-3 text-lg text-left hover:text-red-500"
+          >
             Logout
           </button>
         </nav>
 
-        <div className="flex flex-col justify-center items-center mt-40 md:mt-64 lg:mt-60">
+        <div className="flex flex-col justify-center items-center mt-40 md:mt-64 lg:mt-40">
           <p className="bg-red-500 border border-[#010101] rounded-full w-14 h-14 flex justify-center items-center shadow-2xl mb-1">
             <p className="text-center font-serif text-4xl text-[#FAFAFA] font-extrabold">
               A
